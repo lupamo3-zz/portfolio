@@ -29,7 +29,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80%;
+    height: 100%;
   }
 
   /* add apps */
@@ -43,3 +43,102 @@ body, html {
 }
 
 /* centre text */
+
+.button {
+    position: relative;
+    background-color: gray;
+    border: none;
+    font-size: 35px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 1s
+}
+
+/*  check */
+
+.avatar {
+    vertical-align: middle;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding-left: 0%;
+}
+
+
+/*css */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.nav-icon{
+     font-size:30px;
+     cursor:pointer;
+     display: block;
+     text-align: right;
+}
+
+/* css */
