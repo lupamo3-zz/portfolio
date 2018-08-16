@@ -45,8 +45,8 @@ body, html {
 
 .avatar {
     vertical-align: middle;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     padding-left: 0%;
 }
@@ -126,6 +126,14 @@ body, html {
     float: left;
     width: 33.33%;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.columns:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
 }
 
 /* Clearfix (clear floats) */
@@ -194,3 +202,5 @@ body, html {
 .flask {width: 80%; background-color: #cc66ff;}
 .Bootstrap {width: 65%; background-color: #00ffcc;}
 /* add */
+
+
